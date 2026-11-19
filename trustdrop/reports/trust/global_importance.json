@@ -1,0 +1,404 @@
+{
+  "provenance": "DEVELOPMENT / SYNTHETIC DATA - pipeline validation only, NOT real project results",
+  "method": "TreeExplainer",
+  "units": "log-odds (raw model margin)",
+  "n_rows": 200,
+  "features": [
+    {
+      "feature": "cu2_approved",
+      "label": "Curricular units 2nd sem (approved)",
+      "mean_abs_shap": 0.3091510585161935,
+      "share": 0.1809448901553474,
+      "per_class": {
+        "Dropout": 0.4785826315556187,
+        "Enrolled": 0.05111109549354296,
+        "Graduate": 0.3977594484994188
+      }
+    },
+    {
+      "feature": "cu1_approved",
+      "label": "Curricular units 1st sem (approved)",
+      "mean_abs_shap": 0.2708511997759827,
+      "share": 0.15852813452146766,
+      "per_class": {
+        "Dropout": 0.3466611231653951,
+        "Enrolled": 0.03571651869540801,
+        "Graduate": 0.43017595746714504
+      }
+    },
+    {
+      "feature": "tuition_up_to_date",
+      "label": "Tuition fees up to date",
+      "mean_abs_shap": 0.10577326092980609,
+      "share": 0.061908670706732005,
+      "per_class": {
+        "Dropout": 0.16142807640135287,
+        "Enrolled": 0.0013393591750354972,
+        "Graduate": 0.15455234721302985
+      }
+    },
+    {
+      "feature": "debtor",
+      "label": "Debtor",
+      "mean_abs_shap": 0.10048536189915466,
+      "share": 0.05881368434684001,
+      "per_class": {
+        "Dropout": 0.1468911746516824,
+        "Enrolled": 0.0024675342093178187,
+        "Graduate": 0.15209737683646382
+      }
+    },
+    {
+      "feature": "cu1_grade",
+      "label": "Curricular units 1st sem (grade)",
+      "mean_abs_shap": 0.061886376805899396,
+      "share": 0.036221851243214635,
+      "per_class": {
+        "Dropout": 0.03706633513465931,
+        "Enrolled": 0.10188828421465587,
+        "Graduate": 0.046704511068383
+      }
+    },
+    {
+      "feature": "previous_qualification_grade",
+      "label": "Previous qualification (grade)",
+      "mean_abs_shap": 0.05998067833842166,
+      "share": 0.035106453477727416,
+      "per_class": {
+        "Dropout": 0.028844820973754393,
+        "Enrolled": 0.10049617474956904,
+        "Graduate": 0.05060103929194156
+      }
+    },
+    {
+      "feature": "cu2_enrolled",
+      "label": "Curricular units 2nd sem (enrolled)",
+      "mean_abs_shap": 0.057793861440586625,
+      "share": 0.03382651820832289,
+      "per_class": {
+        "Dropout": 0.052782423745375125,
+        "Enrolled": 0.026238046450453113,
+        "Graduate": 0.09436111412593164
+      }
+    },
+    {
+      "feature": "cu1_enrolled",
+      "label": "Curricular units 1st sem (enrolled)",
+      "mean_abs_shap": 0.055629074440609355,
+      "share": 0.032559476950885,
+      "per_class": {
+        "Dropout": 0.08203045171976556,
+        "Enrolled": 0.024071620291797446,
+        "Graduate": 0.060785151310265066
+      }
+    },
+    {
+      "feature": "course",
+      "label": "Course",
+      "mean_abs_shap": 0.05448632975137419,
+      "share": 0.031890633010121225,
+      "per_class": {
+        "Dropout": 0.04981190391948985,
+        "Enrolled": 0.0645812235021549,
+        "Graduate": 0.049065861832477825
+      }
+    },
+    {
+      "feature": "admission_grade",
+      "label": "Admission grade",
+      "mean_abs_shap": 0.05437903024103434,
+      "share": 0.031827831031679514,
+      "per_class": {
+        "Dropout": 0.055192372829114905,
+        "Enrolled": 0.07189743538503535,
+        "Graduate": 0.036047282508952776
+      }
+    },
+    {
+      "feature": "cu2_grade",
+      "label": "Curricular units 2nd sem (grade)",
+      "mean_abs_shap": 0.04600034790938177,
+      "share": 0.026923821446772946,
+      "per_class": {
+        "Dropout": 0.04519793187209871,
+        "Enrolled": 0.057008382239437196,
+        "Graduate": 0.0357947296166094
+      }
+    },
+    {
+      "feature": "cu2_evaluations",
+      "label": "Curricular units 2nd sem (evaluations)",
+      "mean_abs_shap": 0.043227135873130464,
+      "share": 0.025300671425274004,
+      "per_class": {
+        "Dropout": 0.024033870593302708,
+        "Enrolled": 0.04859545560204424,
+        "Graduate": 0.05705208142404444
+      }
+    },
+    {
+      "feature": "age_at_enrollment",
+      "label": "Age at enrollment",
+      "mean_abs_shap": 0.03929116950922131,
+      "share": 0.022996965900890756,
+      "per_class": {
+        "Dropout": 0.05366511095395254,
+        "Enrolled": 0.031435699121502694,
+        "Graduate": 0.03277269845220872
+      }
+    },
+    {
+      "feature": "application_order",
+      "label": "Application order",
+      "mean_abs_shap": 0.03878083525731199,
+      "share": 0.02269826928442937,
+      "per_class": {
+        "Dropout": 0.025102119455186766,
+        "Enrolled": 0.0448344261184684,
+        "Graduate": 0.04640596019828081
+      }
+    },
+    {
+      "feature": "cu1_credited",
+      "label": "Curricular units 1st sem (credited)",
+      "mean_abs_shap": 0.033420548980041834,
+      "share": 0.019560914955781453,
+      "per_class": {
+        "Dropout": 0.023736646418692543,
+        "Enrolled": 0.007295590850044391,
+        "Graduate": 0.06922940967138856
+      }
+    },
+    {
+      "feature": "fathers_qualification",
+      "label": "Father's qualification",
+      "mean_abs_shap": 0.03163304606121528,
+      "share": 0.018514696576805757,
+      "per_class": {
+        "Dropout": 0.021701266198397205,
+        "Enrolled": 0.034820628674042384,
+        "Graduate": 0.03837724331120626
+      }
+    },
+    {
+      "feature": "fathers_occupation",
+      "label": "Father's occupation",
+      "mean_abs_shap": 0.03116145796481457,
+      "share": 0.01823867793170923,
+      "per_class": {
+        "Dropout": 0.020793869323642866,
+        "Enrolled": 0.053129956998291164,
+        "Graduate": 0.019560547572509676
+      }
+    },
+    {
+      "feature": "mothers_occupation",
+      "label": "Mother's occupation",
+      "mean_abs_shap": 0.03066237300920875,
+      "share": 0.017946565483821394,
+      "per_class": {
+        "Dropout": 0.013758750105762375,
+        "Enrolled": 0.043918151947545996,
+        "Graduate": 0.03431021697431788
+      }
+    },
+    {
+      "feature": "application_mode",
+      "label": "Application mode",
+      "mean_abs_shap": 0.03003588507072133,
+      "share": 0.01757988457463305,
+      "per_class": {
+        "Dropout": 0.025121131965843233,
+        "Enrolled": 0.051184635361787516,
+        "Graduate": 0.013801887884533244
+      }
+    },
+    {
+      "feature": "cu1_evaluations",
+      "label": "Curricular units 1st sem (evaluations)",
+      "mean_abs_shap": 0.029742893436050508,
+      "share": 0.017408397731254927,
+      "per_class": {
+        "Dropout": 0.046731984804500824,
+        "Enrolled": 0.02012931399702211,
+        "Graduate": 0.02236738150662859
+      }
+    },
+    {
+      "feature": "inflation_rate",
+      "label": "Inflation rate",
+      "mean_abs_shap": 0.026611137233364085,
+      "share": 0.015575393229157323,
+      "per_class": {
+        "Dropout": 0.042732061754213645,
+        "Enrolled": 0.017644812907092272,
+        "Graduate": 0.019456537038786338
+      }
+    },
+    {
+      "feature": "cu2_credited",
+      "label": "Curricular units 2nd sem (credited)",
+      "mean_abs_shap": 0.026025907437833666,
+      "share": 0.015232860547638649,
+      "per_class": {
+        "Dropout": 0.005199505615055386,
+        "Enrolled": 0.009880685738899046,
+        "Graduate": 0.06299753095954656
+      }
+    },
+    {
+      "feature": "mothers_qualification",
+      "label": "Mother's qualification",
+      "mean_abs_shap": 0.024733289438502955,
+      "share": 0.01447629635204988,
+      "per_class": {
+        "Dropout": 0.025546488788932037,
+        "Enrolled": 0.030670046084860587,
+        "Graduate": 0.01798333344171624
+      }
+    },
+    {
+      "feature": "gdp",
+      "label": "GDP",
+      "mean_abs_shap": 0.024257633681069517,
+      "share": 0.01419789692106089,
+      "per_class": {
+        "Dropout": 0.02357141234257142,
+        "Enrolled": 0.025349804018624127,
+        "Graduate": 0.023851684682013
+      }
+    },
+    {
+      "feature": "unemployment_rate",
+      "label": "Unemployment rate",
+      "mean_abs_shap": 0.021575307084385712,
+      "share": 0.01262794178738861,
+      "per_class": {
+        "Dropout": 0.026800597654946613,
+        "Enrolled": 0.027788301104010316,
+        "Graduate": 0.01013702249420021
+      }
+    },
+    {
+      "feature": "displaced",
+      "label": "Displaced",
+      "mean_abs_shap": 0.019362685673089193,
+      "share": 0.011332903238453972,
+      "per_class": {
+        "Dropout": 0.040751218350196725,
+        "Enrolled": 0.014945692577166483,
+        "Graduate": 0.002391146091904375
+      }
+    },
+    {
+      "feature": "previous_qualification",
+      "label": "Previous qualification",
+      "mean_abs_shap": 0.01843784761823675,
+      "share": 0.010791599187774182,
+      "per_class": {
+        "Dropout": 0.01260634544909408,
+        "Enrolled": 0.02612435334480324,
+        "Graduate": 0.01658284406081293
+      }
+    },
+    {
+      "feature": "cu1_without_eval",
+      "label": "Curricular units 1st sem (without evaluations)",
+      "mean_abs_shap": 0.013585396785031966,
+      "share": 0.00795147893325313,
+      "per_class": {
+        "Dropout": 0.006575804783424246,
+        "Enrolled": 0.020268979033644427,
+        "Graduate": 0.013911406538027223
+      }
+    },
+    {
+      "feature": "daytime_evening",
+      "label": "Daytime/evening attendance",
+      "mean_abs_shap": 0.013409644525199837,
+      "share": 0.007848611831641015,
+      "per_class": {
+        "Dropout": 0.021985014137026155,
+        "Enrolled": 0.016337916235861484,
+        "Graduate": 0.0019060032027118723
+      }
+    },
+    {
+      "feature": "cu2_without_eval",
+      "label": "Curricular units 2nd sem (without evaluations)",
+      "mean_abs_shap": 0.009571533662862446,
+      "share": 0.005602180744770558,
+      "per_class": {
+        "Dropout": 0.005160036281686189,
+        "Enrolled": 0.013667759757117892,
+        "Graduate": 0.009886804949783255
+      }
+    },
+    {
+      "feature": "marital_status",
+      "label": "Marital status",
+      "mean_abs_shap": 0.007792030081780771,
+      "share": 0.0045606443464955215,
+      "per_class": {
+        "Dropout": 0.010636646476195893,
+        "Enrolled": 0.008423228505325824,
+        "Graduate": 0.0043162152638205956
+      }
+    },
+    {
+      "feature": "scholarship_holder",
+      "label": "Scholarship holder",
+      "mean_abs_shap": 0.007644074893081173,
+      "share": 0.004474046760526849,
+      "per_class": {
+        "Dropout": 0.009196652578320936,
+        "Enrolled": 0.0047796920540713475,
+        "Graduate": 0.008955880046851234
+      }
+    },
+    {
+      "feature": "gender",
+      "label": "Gender",
+      "mean_abs_shap": 0.00710763921388813,
+      "share": 0.0041600730820511205,
+      "per_class": {
+        "Dropout": 0.008063692654541228,
+        "Enrolled": 0.008842507776862477,
+        "Graduate": 0.004416717210260685
+      }
+    },
+    {
+      "feature": "nationality",
+      "label": "Nacionality",
+      "mean_abs_shap": 0.0027261458421420077,
+      "share": 0.0015956023644926457,
+      "per_class": {
+        "Dropout": 0.0036391775155288995,
+        "Enrolled": 0.0034730625907286594,
+        "Graduate": 0.0010661974201684643
+      }
+    },
+    {
+      "feature": "international",
+      "label": "International",
+      "mean_abs_shap": 0.001001545117317922,
+      "share": 0.0005862003905421636,
+      "per_class": {
+        "Dropout": 0.000641400227068516,
+        "Enrolled": 0.0006691521428729175,
+        "Graduate": 0.0016940829820123327
+      }
+    },
+    {
+      "feature": "special_needs",
+      "label": "Educational special needs",
+      "mean_abs_shap": 0.0003233599857533894,
+      "share": 0.00018926131899275688,
+      "per_class": {
+        "Dropout": 0.0004601008776080562,
+        "Enrolled": 0.000509979079652112,
+        "Graduate": 0.0
+      }
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "provenance": "DEVELOPMENT / SYNTHETIC DATA - pipeline validation only, NOT real project results",
+  "model": "Random Forest",
+  "evaluated_on": "held-out test split",
+  "labels": [
+    "Dropout",
+    "Enrolled",
+    "Graduate"
+  ],
+  "matrix": [
+    [
+      166,
+      1,
+      116
+    ],
+    [
+      47,
+      0,
+      112
+    ],
+    [
+      57,
+      1,
+      385
+    ]
+  ],
+  "normalized_by_true": [
+    [
+      0.5866,
+      0.0035,
+      0.4099
+    ],
+    [
+      0.2956,
+      0.0,
+      0.7044
+    ],
+    [
+      0.1287,
+      0.0023,
+      0.8691
+    ]
+  ]
+}

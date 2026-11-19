@@ -1,0 +1,44 @@
+{
+  "provenance": "DEVELOPMENT / SYNTHETIC DATA - pipeline validation only, NOT real project results",
+  "model": "XGBoost",
+  "evaluated_on": "held-out test split",
+  "labels": [
+    "Dropout",
+    "Enrolled",
+    "Graduate"
+  ],
+  "matrix": [
+    [
+      183,
+      55,
+      45
+    ],
+    [
+      60,
+      35,
+      64
+    ],
+    [
+      68,
+      71,
+      304
+    ]
+  ],
+  "normalized_by_true": [
+    [
+      0.6466,
+      0.1943,
+      0.159
+    ],
+    [
+      0.3774,
+      0.2201,
+      0.4025
+    ],
+    [
+      0.1535,
+      0.1603,
+      0.6862
+    ]
+  ]
+}

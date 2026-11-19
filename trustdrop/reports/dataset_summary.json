@@ -1,0 +1,18 @@
+{
+  "provenance": "DEVELOPMENT / SYNTHETIC DATA - pipeline validation only, NOT real project results",
+  "n_rows": 4424,
+  "n_features": 36,
+  "class_counts": {
+    "Dropout": 1416,
+    "Enrolled": 796,
+    "Graduate": 2212
+  },
+  "class_share": {
+    "Dropout": 0.3201,
+    "Enrolled": 0.1799,
+    "Graduate": 0.5
+  },
+  "imbalance_ratio_max_over_min": 2.779,
+  "missing_values_total": 0,
+  "imbalance_handling": "balanced class weights / sample weights computed from training labels inside each fit"
+}

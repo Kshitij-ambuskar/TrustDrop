@@ -1,0 +1,10 @@
+{
+  "provenance": "DEVELOPMENT / SYNTHETIC DATA - pipeline validation only, NOT real project results",
+  "n_students": 100,
+  "n_perturbations_each": 15,
+  "method": "Grades: Gaussian noise (0.10 x training std). Unit counts: -1/0/+1. Clipped to valid ranges; approved <= enrolled + credited enforced.",
+  "mean_score": 0.5974531131744675,
+  "mean_stability_rate": 0.9066666666666666,
+  "share_stable": 0.35,
+  "share_unstable": 0.15
+}

@@ -1,0 +1,45 @@
+{
+  "provenance": "DEVELOPMENT / SYNTHETIC DATA - pipeline validation only, NOT real project results",
+  "label": "Project-defined Trustworthiness Indicator",
+  "score": 0.6452788216024812,
+  "level": "Moderate",
+  "components": {
+    "explainability": {
+      "score": 1.0,
+      "weight": 0.1,
+      "status": "GOOD"
+    },
+    "uncertainty": {
+      "score": 0.21702405672303549,
+      "weight": 0.2,
+      "status": "POOR"
+    },
+    "calibration": {
+      "score": 0.7599111806444317,
+      "weight": 0.15,
+      "status": "GOOD"
+    },
+    "fairness": {
+      "score": 0.5949835526315789,
+      "weight": 0.2,
+      "status": "FAIR"
+    },
+    "robustness": {
+      "score": 0.5974531131744675,
+      "weight": 0.2,
+      "status": "FAIR"
+    },
+    "data_quality": {
+      "score": 0.996,
+      "weight": 0.15,
+      "status": "GOOD"
+    }
+  },
+  "evaluated": 6,
+  "total": 6,
+  "partial": false,
+  "formula": "score = sum(w_i * c_i) / sum(w_i) over evaluated components; weights = explainability 0.10, uncertainty 0.20, calibration 0.15, fairness 0.20, robustness 0.20, data_quality 0.15",
+  "weakest_component": "uncertainty",
+  "capped": false,
+  "disclaimer": "Project-defined indicator for demonstration; not a universal measure of trustworthiness."
+}

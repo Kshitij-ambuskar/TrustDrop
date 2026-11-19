@@ -1,0 +1,175 @@
+{
+  "provenance": "DEVELOPMENT / SYNTHETIC DATA - pipeline validation only, NOT real project results",
+  "model": "XGBoost",
+  "selection": {
+    "selection_basis": "out-of-fold Brier score on TRAINING data (lower is better)",
+    "oof_brier_by_option": {
+      "none": 0.5161773856152104,
+      "sigmoid": 0.48870382764791254,
+      "isotonic": 0.4860660908315403
+    },
+    "chosen": "isotonic",
+    "calibration_applied": true,
+    "cv_inner": 3,
+    "classes": [
+      "Dropout",
+      "Enrolled",
+      "Graduate"
+    ]
+  },
+  "before_calibration": {
+    "n_samples": 885,
+    "brier_score": 0.5239585081356821,
+    "ece": 0.03916995996809275,
+    "reliability_curve": [
+      {
+        "bin_lower": 0.0,
+        "bin_upper": 0.1,
+        "count": 0,
+        "mean_confidence": null,
+        "accuracy": null
+      },
+      {
+        "bin_lower": 0.1,
+        "bin_upper": 0.2,
+        "count": 0,
+        "mean_confidence": null,
+        "accuracy": null
+      },
+      {
+        "bin_lower": 0.2,
+        "bin_upper": 0.30000000000000004,
+        "count": 0,
+        "mean_confidence": null,
+        "accuracy": null
+      },
+      {
+        "bin_lower": 0.30000000000000004,
+        "bin_upper": 0.4,
+        "count": 63,
+        "mean_confidence": 0.37399524450302124,
+        "accuracy": 0.31746031746031744
+      },
+      {
+        "bin_lower": 0.4,
+        "bin_upper": 0.5,
+        "count": 238,
+        "mean_confidence": 0.45080438256263733,
+        "accuracy": 0.4411764705882353
+      },
+      {
+        "bin_lower": 0.5,
+        "bin_upper": 0.6000000000000001,
+        "count": 210,
+        "mean_confidence": 0.5464749932289124,
+        "accuracy": 0.49523809523809526
+      },
+      {
+        "bin_lower": 0.6000000000000001,
+        "bin_upper": 0.7000000000000001,
+        "count": 136,
+        "mean_confidence": 0.6483176946640015,
+        "accuracy": 0.7132352941176471
+      },
+      {
+        "bin_lower": 0.7000000000000001,
+        "bin_upper": 0.8,
+        "count": 111,
+        "mean_confidence": 0.7504138946533203,
+        "accuracy": 0.7927927927927928
+      },
+      {
+        "bin_lower": 0.8,
+        "bin_upper": 0.9,
+        "count": 82,
+        "mean_confidence": 0.8487129211425781,
+        "accuracy": 0.8536585365853658
+      },
+      {
+        "bin_lower": 0.9,
+        "bin_upper": 1.0,
+        "count": 45,
+        "mean_confidence": 0.935869574546814,
+        "accuracy": 0.8444444444444444
+      }
+    ]
+  },
+  "after_calibration": {
+    "n_samples": 885,
+    "brier_score": 0.49412690067372705,
+    "ece": 0.03601332290333523,
+    "reliability_curve": [
+      {
+        "bin_lower": 0.0,
+        "bin_upper": 0.1,
+        "count": 0,
+        "mean_confidence": null,
+        "accuracy": null
+      },
+      {
+        "bin_lower": 0.1,
+        "bin_upper": 0.2,
+        "count": 0,
+        "mean_confidence": null,
+        "accuracy": null
+      },
+      {
+        "bin_lower": 0.2,
+        "bin_upper": 0.30000000000000004,
+        "count": 0,
+        "mean_confidence": null,
+        "accuracy": null
+      },
+      {
+        "bin_lower": 0.30000000000000004,
+        "bin_upper": 0.4,
+        "count": 22,
+        "mean_confidence": 0.37621670861052475,
+        "accuracy": 0.36363636363636365
+      },
+      {
+        "bin_lower": 0.4,
+        "bin_upper": 0.5,
+        "count": 210,
+        "mean_confidence": 0.4521498189918275,
+        "accuracy": 0.42857142857142855
+      },
+      {
+        "bin_lower": 0.5,
+        "bin_upper": 0.6000000000000001,
+        "count": 209,
+        "mean_confidence": 0.5494698019492884,
+        "accuracy": 0.6028708133971292
+      },
+      {
+        "bin_lower": 0.6000000000000001,
+        "bin_upper": 0.7000000000000001,
+        "count": 168,
+        "mean_confidence": 0.6512111357834814,
+        "accuracy": 0.6726190476190477
+      },
+      {
+        "bin_lower": 0.7000000000000001,
+        "bin_upper": 0.8,
+        "count": 154,
+        "mean_confidence": 0.7437344167821731,
+        "accuracy": 0.7922077922077922
+      },
+      {
+        "bin_lower": 0.8,
+        "bin_upper": 0.9,
+        "count": 77,
+        "mean_confidence": 0.8464172550227008,
+        "accuracy": 0.7922077922077922
+      },
+      {
+        "bin_lower": 0.9,
+        "bin_upper": 1.0,
+        "count": 45,
+        "mean_confidence": 0.9388264924104266,
+        "accuracy": 0.9333333333333333
+      }
+    ]
+  },
+  "note": "If calibration_applied is false, 'after' equals 'before' (no calibrator was warranted)."
+}

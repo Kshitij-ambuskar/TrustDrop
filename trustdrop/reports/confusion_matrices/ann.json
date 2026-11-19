@@ -1,0 +1,44 @@
+{
+  "provenance": "DEVELOPMENT / SYNTHETIC DATA - pipeline validation only, NOT real project results",
+  "model": "ANN",
+  "evaluated_on": "held-out test split",
+  "labels": [
+    "Dropout",
+    "Enrolled",
+    "Graduate"
+  ],
+  "matrix": [
+    [
+      160,
+      84,
+      39
+    ],
+    [
+      45,
+      49,
+      65
+    ],
+    [
+      60,
+      102,
+      281
+    ]
+  ],
+  "normalized_by_true": [
+    [
+      0.5654,
+      0.2968,
+      0.1378
+    ],
+    [
+      0.283,
+      0.3082,
+      0.4088
+    ],
+    [
+      0.1354,
+      0.2302,
+      0.6343
+    ]
+  ]
+}

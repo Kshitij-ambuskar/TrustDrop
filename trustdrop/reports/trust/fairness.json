@@ -1,0 +1,212 @@
+{
+  "provenance": "DEVELOPMENT / SYNTHETIC DATA - pipeline validation only, NOT real project results",
+  "evaluated_on": "held-out test split",
+  "audited_decision": "Model flags student as Dropout",
+  "thresholds": {
+    "fair": "all gaps < 0.1",
+    "potential_disparity": "worst gap in [0.1, 0.2)",
+    "requires_review": "worst gap >= 0.2",
+    "min_group_size": 30
+  },
+  "attributes": {
+    "gender": {
+      "label": "Gender",
+      "status": "fair",
+      "groups": [
+        {
+          "group": "Female",
+          "n": 560,
+          "actual_dropout_rate": 0.34285714285714286,
+          "flag_rate": 0.375,
+          "recall": 0.6979166666666666,
+          "fpr": 0.20652173913043478,
+          "precision": 0.638095238095238,
+          "accuracy": 0.65,
+          "fnr": 0.30208333333333337
+        },
+        {
+          "group": "Male",
+          "n": 325,
+          "actual_dropout_rate": 0.28,
+          "flag_rate": 0.36923076923076925,
+          "recall": 0.6483516483516484,
+          "fpr": 0.2606837606837607,
+          "precision": 0.49166666666666664,
+          "accuracy": 0.6092307692307692,
+          "fnr": 0.3516483516483516
+        }
+      ],
+      "excluded_groups": [],
+      "gaps": {
+        "demographic_parity_diff": 0.005769230769230749,
+        "equal_opportunity_diff": 0.04956501831501825,
+        "fpr_diff": 0.05416202155332592,
+        "equalized_odds_diff": 0.05416202155332592
+      },
+      "warnings": []
+    },
+    "age_group": {
+      "label": "Age group at enrollment",
+      "status": "potential_disparity",
+      "groups": [
+        {
+          "group": "21-25",
+          "n": 73,
+          "actual_dropout_rate": 0.2602739726027397,
+          "flag_rate": 0.3561643835616438,
+          "recall": 0.7894736842105263,
+          "fpr": 0.2037037037037037,
+          "precision": 0.5769230769230769,
+          "accuracy": 0.6575342465753424,
+          "fnr": 0.21052631578947367
+        },
+        {
+          "group": "<=20",
+          "n": 16,
+          "actual_dropout_rate": 0.5,
+          "flag_rate": 0.5625,
+          "recall": 0.875,
+          "fpr": 0.25,
+          "precision": 0.7777777777777778,
+          "accuracy": 0.8125,
+          "fnr": 0.125
+        },
+        {
+          "group": ">=26",
+          "n": 796,
+          "actual_dropout_rate": 0.32160804020100503,
+          "flag_rate": 0.3706030150753769,
+          "recall": 0.66796875,
+          "fpr": 0.22962962962962963,
+          "precision": 0.5796610169491525,
+          "accuracy": 0.6293969849246231,
+          "fnr": 0.33203125
+        }
+      ],
+      "excluded_groups": [
+        "<=20"
+      ],
+      "gaps": {
+        "demographic_parity_diff": 0.014438631513733091,
+        "equal_opportunity_diff": 0.12150493421052633,
+        "fpr_diff": 0.025925925925925936,
+        "equalized_odds_diff": 0.12150493421052633
+      },
+      "warnings": [
+        "Group '<=20' has fewer than 30 students and was excluded from disparity gaps.",
+        "Gaps can reflect real base-rate differences between groups; treat as a prompt for review, not proof of bias."
+      ]
+    },
+    "international": {
+      "label": "International student",
+      "status": "not_evaluated",
+      "groups": [
+        {
+          "group": "No",
+          "n": 867,
+          "actual_dropout_rate": 0.31833910034602075,
+          "flag_rate": 0.3760092272202999,
+          "recall": 0.6884057971014492,
+          "fpr": 0.23011844331641285,
+          "precision": 0.5828220858895705,
+          "accuracy": 0.6343713956170703,
+          "fnr": 0.3115942028985508
+        },
+        {
+          "group": "Yes",
+          "n": 18,
+          "actual_dropout_rate": 0.3888888888888889,
+          "flag_rate": 0.2222222222222222,
+          "recall": 0.42857142857142855,
+          "fpr": 0.09090909090909091,
+          "precision": 0.75,
+          "accuracy": 0.6666666666666666,
+          "fnr": 0.5714285714285714
+        }
+      ],
+      "excluded_groups": [
+        "Yes"
+      ],
+      "gaps": {},
+      "warnings": [
+        "Group 'Yes' has fewer than 30 students and was excluded from disparity gaps.",
+        "Fewer than two sufficiently large groups."
+      ]
+    },
+    "special_needs": {
+      "label": "Educational special needs",
+      "status": "not_evaluated",
+      "groups": [
+        {
+          "group": "No",
+          "n": 879,
+          "actual_dropout_rate": 0.3185437997724687,
+          "flag_rate": 0.3720136518771331,
+          "recall": 0.6857142857142857,
+          "fpr": 0.22537562604340566,
+          "precision": 0.5871559633027523,
+          "accuracy": 0.6370875995449374,
+          "fnr": 0.3142857142857143
+        },
+        {
+          "group": "Yes",
+          "n": 6,
+          "actual_dropout_rate": 0.5,
+          "flag_rate": 0.5,
+          "recall": 0.3333333333333333,
+          "fpr": 0.6666666666666666,
+          "precision": 0.3333333333333333,
+          "accuracy": 0.3333333333333333,
+          "fnr": 0.6666666666666667
+        }
+      ],
+      "excluded_groups": [
+        "Yes"
+      ],
+      "gaps": {},
+      "warnings": [
+        "Group 'Yes' has fewer than 30 students and was excluded from disparity gaps.",
+        "Fewer than two sufficiently large groups."
+      ]
+    },
+    "displaced": {
+      "label": "Displaced",
+      "status": "fair",
+      "groups": [
+        {
+          "group": "No",
+          "n": 456,
+          "actual_dropout_rate": 0.3399122807017544,
+          "flag_rate": 0.37280701754385964,
+          "recall": 0.6645161290322581,
+          "fpr": 0.22259136212624583,
+          "precision": 0.6058823529411764,
+          "accuracy": 0.6228070175438597,
+          "fnr": 0.3354838709677419
+        },
+        {
+          "group": "Yes",
+          "n": 429,
+          "actual_dropout_rate": 0.29836829836829837,
+          "flag_rate": 0.372960372960373,
+          "recall": 0.703125,
+          "fpr": 0.23255813953488372,
+          "precision": 0.5625,
+          "accuracy": 0.6480186480186481,
+          "fnr": 0.296875
+        }
+      ],
+      "excluded_groups": [],
+      "gaps": {
+        "demographic_parity_diff": 0.0001533554165133455,
+        "equal_opportunity_diff": 0.038608870967741904,
+        "fpr_diff": 0.009966777408637884,
+        "equalized_odds_diff": 0.038608870967741904
+      },
+      "warnings": []
+    }
+  },
+  "overall_status": "potential_disparity",
+  "worst_equalized_odds_diff": 0.12150493421052633,
+  "caveat": "Gender, age and other audited attributes are also model inputs in this dataset. Group gaps do not by themselves prove discrimination."
+}
