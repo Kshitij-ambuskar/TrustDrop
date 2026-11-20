@@ -16,6 +16,7 @@ Instead of providing predictions alone, TrustDrop incorporates explainability, f
 
 ## Tech Stack
 
+
 ### Frontend
 - React.js
 - Vite
